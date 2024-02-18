@@ -35,7 +35,7 @@ body {
 .profile h2 {
     font-size: 30px;
     text-transform: capitalize;
-} 
+}
 
 
 .menu {
@@ -110,6 +110,7 @@ ul li a i {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin: -153px 0px ;
 }
 
 .data-info .box {
@@ -196,22 +197,55 @@ ul li a i {
 #chart-energy {
 
     position: absolute;
-    bottom: -2px;
+    bottom: -80px;
+    right: 50px;
     height: 650px;
-    width: 100%;
-    margin: 50px;
+    width: 80%;
+    margin: 40px 0px;
 }
 
 
 table {
-    border-spacing: 80px 0px;
+    border-spacing: 80px 50px;
+}
+
+.crop-helth{
+    margin:-205px 0px;
+}
+
+.crop-box {
+    background-color: #123;
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px #123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.crop-box .crop-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+
 }
 
 .green-area,
-.temp {
+.temp,
+.humidity,
+.soil-moisture,
+.light,
+.ph,
+.conductivity,
+.rainfall,
+.flow-control {
     background-color: #123;
-    height: 150px;
-    width: 200px;
+    height: 200px;
+    width: 300px;
     border-radius: 8px;
     box-shadow: 0 0 30px #123;
     display: flex;
@@ -223,15 +257,51 @@ table {
 }
 
 .green-area p,
-.temp p {
+.temp p,
+.humidity p,
+.soil-moisture p,
+.light p,
+.ph p,
+.conductivity p,
+.rainfall p,
+.flow-control p {
+    margin-top: 5px;
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 500;
 }
 
+.green-area span,
+.temp span,
+.humidity span,
+.soil-moisture span,
+.light span,
+.ph span,
+.conductivity span,
+.rainfall span,
+.flow-control span {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.sence {
+    border: solid 3px greenyellow;
+    background-color: aquamarine;
+    color: #123;
+    border-radius: 30px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
 .control {
     background-color: #123;
-    height: 100%;
+    height: 91%;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 0 30px #123;
@@ -241,6 +311,7 @@ table {
     flex-wrap: nowrap;
     flex-direction: column;
     padding: 10px;
+    margin: -195px 0px;
     /* align-content: center; */
 }
 
